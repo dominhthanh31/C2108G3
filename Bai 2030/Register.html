@@ -4,114 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký</title>
-    <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        height: 700px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container{
-        width: 550px;
-        border: 1px solid #ccc;
-        background-color: #b6eaf0;
-    }
-
-    .container h2{
-        margin: 20px;
-        background-color: #29dcf0;
-        padding: 0;
-        text-align: center;
-    }
-
-    .container form{
-        margin: 8px;
-    }
-
-    .container input, .container label{
-        width: 95%;
-        margin: 8px;
-        padding: 8px;
-        font-size: 18px;
-    }
-
-    .container button{
-        margin: 16px;
-        padding: 6px 10px;
-        font-size: 18px;
-        color: white;
-        background-color: #61bdc7;
-        border: none;
-        border-radius: 5px;
-    }
-
-    </style>
+    <title>Quản lý đăng ký đăng nhập</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
         <h2>Đăng ký</h2>
-        <form onsubmit="return addAcc()">
-            <label for="fullname_id">Name: </label>
+        <form action="" onsubmit="return addAcc()">
+            <label for="fullname_id">Tên</label>
             <input type="text" id="fullname_id" required name="fullname">
-            <label for="age_id">Age: </label>
+            <label for="age_id">Tuổi</label>
             <input type="number" id="age_id" required name="age">
-            <label for="email_id">Gmail: </label>
+            <label for="email_id">Email</label>
             <input type="email" id="email_id" required name="email">
             <button type="submit">Đăng ký</button>
+            <button type="reset">Reset</button>
         </form>
     </div>
 </body>
-<script>
-    var tkList = []
-
-    var fullnameTag = document.getElementById('fullname_id')
-    var ageTag = document.getElementById('age_id')
-    var emailTag = document.getElementById('email_id')
-
-    function saveLocalStorage(){
-        var json = JSON.stringify(tkList)
-        localStorage.setItem('tkList',json)
-    }
-
-    function openLocalStorage(){
-        var json = localStorage.getItem('tkList')
-        if(json != null && json != ''){
-            tkList = JSON.parse(json)
-        }
-    }
-
-    function addtk(){
-        var tk = {
-            "name" : fullnameTag.value,
-            "age" : ageTag.value,
-            "email" : emailTag.value
-        }
-        var t = 0
-        openLocalStorage()
-        for (i = 0; i < tkList.length; i++){
-            if(tkList[i].email == tk.email){
-                tkList[i].name == tk.name
-                tkList[i].age == tk.age
-                t = 1
-            }
-        }
-        if (t == 0){
-            tkList.push(tk)
-        }
-
-        saveLocalStorage()
-
-        return false
-    }
-
-</script>
+<script src="./app.js"></script>
 </html>

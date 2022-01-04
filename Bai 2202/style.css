@@ -1,20 +1,20 @@
-.container{
-    width: 600px;
-    margin: 0px auto;
-    padding: 20px;
-    background-color: #6baeff;
+.container {
+	width: 600px;
+	background-color: #f7da8b;
+	margin: 0px auto;
+	padding: 20px;
 }
 
-.container label, .container input{
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 18px;
+.container label, .container input {
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 18px;
 }
 
-.container label{
-    font-weight: bold;
+.container label {
+	font-weight: bold;
 }
 
-.container button{
-    font-size: 19px;
+.container button {
+	font-size: 18px;
 }

@@ -3,24 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Register Page</title>
+	<title>Login Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
-	<form method="post" onsubmit="return saveRegister();">
-		<label>Full Name: </label>
-		<input required type="text" name="fullname" id="fullname_id" placeholder="Enter full name">
-		<label>Age: </label>
-		<input required type="number" name="age" id="age_id" placeholder="Enter age">
+	<form method="post" onsubmit="return login();">
 		<label>Email: </label>
 		<input required type="email" name="email" id="email_id" placeholder="Enter email">
 		<label>Password: </label>
 		<input required type="password" name="pwd" id="pwd_id" placeholder="Enter password">
-		<label>Confirm Password: </label>
-		<input required type="password" name="confirmPwd" id="confirm_pwd_id" placeholder="Enter password">
-		<button type="submit">Register</button>
-		<button type="reset">Reset</button>
+		<p>
+			<a href="register.html">Register a new account</a>
+		</p>
+		<button type="submit">Login</button>
 	</form>
 </div>
 <script type="text/javascript" src="script.js"></script>

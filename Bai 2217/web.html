@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./style.css">
+	<title>Ôn tập HTML/CSS/JS - 60 phút - Web quản lý tin tức</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>ĐĂNG NHẬP HỆ THỐNG</h2>
-        <div class="login">
-            <div class="login__img">
-                <img src="./assets/img/download.jpeg" alt="lock">
-            </div>
-            <form class="login__input" onsubmit="return showNotify()">
-                <div class="login__input--info">
-                    <label for="">Tài khoản</label>
-                    <input type="text" required placeholder="Enter account" id="account_id">
-                </div>
-                <div class="login__input--info">
-                    <label for="">Mật khẩu</label>
-                    <input type="password" required placeholder="Enter password" id="pwd_id">
-                </div>
-                <div class="login__input--btn">
-                    <button class="btn" type="submit">Đăng nhập</button>
-                    <button class="btn" type="reset">Nhập lại</button>
-                </div>
-            </form>
-        </div>
-    </div>
+	<div class="container">
+		<div class="aligh-center">
+			<div class="header">
+			<div class="logo">
+				<p>LOGO</p>
+				<h3>WEB TIN TUC</h3>
+			</div>		
+				<div class="menu">
+					<ul>
+						<li><a href="test60.html">Trang Chu</a></li>
+						<li>Tin Hoc</li>
+						<li><a href="form.html">Biet Mau</a></li>
+						<li>Khoa Hoc</li>
+						<li>Tuyen Dung</li>
+						<li>Lien He</li>
+					</ul>
+						<div class="none"><label></label>
+						</div>
+				</div>
+		</div>
+		<div class="main">
+			<div class="main-left">
+				<p>NOI DUNG BAI VIET</p>
+				<p>Bản tin 18h ngày 13/3 của Bộ Y tế cho biết có 3 ca mắc mới COVID-19, trong đó 2 ca ghi nhận tại Hải Dương và 1 ca nhập cảnh được cách ly ngay tại Bà Rịa- Vũng Tàu. Việt Nam hiện có 2.553 bệnh nhân.</p>
+				<p>Số ca mắc ở Việt Nam:</p>
 
-    <div class="notify hide">
-        <div class="notify__success">
-            <div class="notify--info">
-                <p>Đăng nhập thành công</p>
-            </div>
-            <div class="notify--btn">
-                <button class="ok-btn" onclick="hideNotify()">Ok</button>
-            </div>
-        </div>
-    </div>
+				<p>- Tính đến 18h ngày 13/3: Việt Nam có tổng cộng 1594.</p>
+
+				<p>Số lượng ca mắc mới tính từ ngày 27/1 đến nay: 901 ca, trong đó, riêng Hải Dương có 715 ca, Quảng Ninh (61 ca), Gia Lai (27 ca), Hà Nội (34 ca), Bắc Ninh (5 ca), Bắc Giang (2 ca), TP. Hồ Chí Minh (36 ca ), Hoà Bình (2 ca), Hà Giang (1 ca), Điện Biên (3 ca), Bình Dương (6 ca), Hải Phòng (4 ca ), Hưng Yên (3 ca).</p>
+			</div>
+			<div class="main-right">
+					<h4>BAI VIET MOI NHAT</h4>
+					<ul>
+						<li>BAI 1</li>
+						<li>BAI 2</li>
+						<li>BAI 3</li>
+						<li>BAI 4</li>
+						<li>BAI 5</li>
+					</ul>
+			</div>
+		</div>
+		</div>
+	</div>
 </body>
-<script src="./scr.js"></script>
 </html>

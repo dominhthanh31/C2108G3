@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    display: flex;
+}
+
+.container{
+    width: 85%;
+    margin: 0% auto;
+    height: 100%;
+}
+
+.header_banner{
+    background: #32a852;
+    padding: 20px 12px;
+    display: flex;
+}
+
+.logo{
+    margin: 0 12px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header_banner_head{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    background-color: #32a852;
+    border: black solid 1px;
+}
+
+.menu ul li{
+    padding: 12px;
+    display: inline;
+    margin: 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:  #fff;
+}
+
+.menu li :hover{
+    background-color: #4fe778;
+    color: black;
+}
+
+.background-img{
+    width: 100%;
+    height: 450px;
+}
+
+.content_help{
+    display: flex;
+    padding: 16px 24px;
+    width: 100%;
+    justify-content: center;
+}
+
+.truck {
+    width: 25%;
+    margin-right: 40px;
+    padding: 10px;
+    background-color: #42c7c0;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.return {
+    width: 25%;
+    margin-right: 40px;
+    padding: 10px;
+    background-color: #f53535;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.contact {
+    width: 25%;
+    margin-right: 40px;
+    padding: 10px;
+    background-color: #55e45c;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.discount {
+    width: 25%;
+    margin-right: 40px;
+    padding: 10px;
+    background-color: orange;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content_main{
+    margin: 20px;
+}
+
+.content_main1 {
+    padding: 16px;
+    border: 1px solid #ccc;
+}
+
+.product_list {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    border: solid 1px black;
+    text-align: center;
+}
+
+.product img {
+    width: 230px;
+    height: 187px;
+    padding: 10px;
+}
+
+.product h3 {
+    color: orange;
+    font-weight: bold;
+    border: none;
+}
+  
