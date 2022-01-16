@@ -1,0 +1,12 @@
+.container{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.header h2{
+    color: aquamarine;
+}
+
+.body{
+    /* display: flex; */
+}

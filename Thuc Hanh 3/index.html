@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="form_row">
+            <label>Account</label>
+            <input type="text" placeholder="Full Name" class="form_control">
+            <input type="email" placeholder="Email Adress" class="form_control">
+            <input type="password" placeholder="Password" class="form_control">
+            <div>
+                <label>Date of Birth</label>
+                <input type="number" min="1" max="31" placeholder="DD">
+                <input type="number" min="1" max="12" placeholder="MM">
+                <input type="number" min="1" max="9999" placeholder="YYYY">
+                <label>Gender</label>
+                <input type="radio" id="gender_id">Male
+                <input type="radio" id="gender_id">Female
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

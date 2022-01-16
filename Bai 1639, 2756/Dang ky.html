@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scr.js"></script>
+
+    <style>
+        .container{
+            width: 600px;
+            margin: 0px auto;
+            border: solid 1px #d6d6d6;
+            margin-bottom: 20px;
+        }
+
+        .container .heading{
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .container .body label, .container .body input {
+			width: 95%;
+			padding: 5px;
+			font-size: 15px;
+			margin: 10px;
+		}
+
+        .btn-success {
+			background-color: #28a745;
+			margin-left: 15px;
+			border: none;
+			padding: 5px;
+			color: white;
+            margin-bottom: 5px;
+		}
+
+		.btn-warning {
+			background-color: orange;
+			margin-left: 5px;
+			border: none;
+			padding: 5px;
+			color: black;
+            margin-bottom: 5px;
+		}
+
+        .btn-danger {
+			background-color: red;
+			margin-left: 5px;
+			border: none;
+			padding: 5px;
+			color: white;
+		}
+
+    </style>
+    
+</head>
+<body>
+<div class="container">
+    <div class="heading">
+        Đăng ký tài khoản User
+    </div>
+    <div class="body">
+        <form method="post" onsubmit="return saveData()">
+            <label>User name: </label>
+            <input required type="text" name="username" id="username_id" placeholder="Enter user name">
+            <label>Full name: </label>
+            <input required type="text" name="fullname" id="fullname_id" placeholder="Enter full name">
+            <label>Email: </label>
+            <input required type="email" name="email" id="email_id" placeholder="Enter email">
+            <label>Birthday: </label>
+            <input required type="date" name="birthday" id="birthday_id" placeholder="Enter birthday">
+            <button type="submit" class="btn-success">Save</button>
+            <button type="reset" class="btn-warning">Reset</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <table style="width: 100%;">
+        <thead class="heading">
+            <tr>
+                <th>No</th>
+                <th>User name</th>
+                <th>Full name</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+</div>
+</body>
+</html>
