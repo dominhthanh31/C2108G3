@@ -93,10 +93,10 @@
     width: 728px;
 }
 
-@-webkit-keyframes slide {
+/* @-webkit-keyframes slide {
     20% {margin-left: 0px;}
     30% {margin-left: -728px;}
     50% {margin-left: -728px;}
     60% {margin-left: -1456px;}
     80% {margin-left: -1456px;}
-}
+} */

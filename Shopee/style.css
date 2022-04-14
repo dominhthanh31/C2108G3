@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container , body , header{
+    width: 100%;
+}
+
+header{
+    background: linear-gradient(180deg,#f53d2d,#f63);
+    height: 150px;
+}
+
+.header{
+    margin: 0px auto;
+    width: 80%;
+}
+
+.header-ho_tro{
+    padding: 5px;
+    display: flex;
+    height: 30px;
+}
+
+.ho_tro-left{
+    display: flex;
+}
+
+.ho_tro-left a{
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.ho_tro-right ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ho_tro-right ul li{
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.header-search{
+    display: flex;
+}
+
+.header-search .logo_shopee img{
+    height: 10px;
+}
